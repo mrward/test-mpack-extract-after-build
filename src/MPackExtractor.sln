@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPackExtractor", "MPackExtractor.csproj", "{D426CA02-809B-45BB-B5DC-6CE89C9417DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D426CA02-809B-45BB-B5DC-6CE89C9417DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D426CA02-809B-45BB-B5DC-6CE89C9417DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D426CA02-809B-45BB-B5DC-6CE89C9417DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D426CA02-809B-45BB-B5DC-6CE89C9417DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<MPackUrl>http://lastexitcode.com/monodevelop-addins/5.0/MonoDevelop.PackageManagement.Extensions_0.8.mpack</MPackUrl>
+		<ExtractDir>"$(MSBuildThisFileDirectory)..\extract"</ExtractDir>
+	</PropertyGroup>
+	 <PropertyGroup>
+    <ExtractExePath Condition=" '$(ExtractExePath)' == '' ">$(MSBuildThisFileDirectory)bin\Debug\MPackExtractor.exe</ExtractExePath>
+    <ExtractCommand Condition=" '$(OS)' == 'Windows_NT'">"$(ExtractExePath)"</ExtractCommand>
+    <ExtractCommand Condition=" '$(OS)' != 'Windows_NT' ">mono --runtime=v4.0.30319 "$(ExtractExePath)"</ExtractCommand>
+  </PropertyGroup>
+  <Target Name="ExtractMPack" AfterTargets="Build">
+    <Exec Command="$(ExtractCommand) $(MPackUrl) $(ExtractDir)" />
+  </Target>
+</Project>
